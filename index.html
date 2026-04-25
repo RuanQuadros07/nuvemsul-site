@@ -303,34 +303,78 @@ font-size:14px;
 
 @media (max-width: 768px){
 
-  .hero{
-    min-height:auto !important;
-    padding: 110px 22px 60px !important;
-    display:flex;
-    align-items:flex-start !important;
-    justify-content:center;
-  }
+/* estrutura geral */
+.hero{
+display:flex !important;
+flex-direction:column !important;
+align-items:center !important;
+justify-content:flex-start !important;
+padding:110px 20px 50px !important;
+min-height:auto !important;
+text-align:left;
+}
 
-  .hero-content{
-    margin-top:0 !important;
-    max-width:100% !important;
-  }
+/* bloco texto */
+.hero-content{
+width:100% !important;
+max-width:100% !important;
+margin:0 !important;
+}
 
-  .hero h1{
-    font-size:52px !important;
-    line-height:1.05 !important;
-    margin-bottom:18px !important;
-  }
+/* título */
+.hero h1{
+font-size:52px !important;
+line-height:1.05 !important;
+margin-bottom:18px !important;
+}
 
-  .hero p{
-    font-size:19px !important;
-    line-height:1.5 !important;
-    margin-bottom:28px !important;
-  }
+/* subtítulo */
+.hero p{
+font-size:20px !important;
+line-height:1.45 !important;
+margin-bottom:24px !important;
+}
 
-  .badge{
-    margin-bottom:22px !important;
-  }
+/* botões */
+.hero-buttons{
+display:flex !important;
+flex-direction:column !important;
+gap:14px;
+width:100%;
+}
+
+.hero-buttons a{
+width:100%;
+text-align:center;
+}
+
+/* card direito */
+.hero-card{
+position:relative !important;
+right:auto !important;
+top:auto !important;
+margin-top:28px !important;
+width:100% !important;
+max-width:340px !important;
+}
+
+/* navbar */
+.nav{
+flex-wrap:wrap;
+gap:12px;
+height:auto !important;
+padding:16px 20px !important;
+}
+
+.menu{
+gap:16px !important;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.logo img{
+height:52px !important;
+}
 
 }
 </style>
