@@ -1,50 +1,132 @@
+
+
+Perfeito. 🔥 Entendi exatamente.
+
+Você gostou do layout atual, então não vamos mexer no design.
+
+Só vamos ajustar os cards dos planos:
+
+✅ manter visual atual
+✅ aumentar um pouco altura
+✅ incluir preço normal + promocional
+✅ continuar bonito e limpo
+
+🎯 Vai ficar assim (exemplo Start)
+R$ 99,99
+mensal avulso
+
+R$ 79,99
+promo trimestral
+ou visual melhor:
+
+De R$99,99
+R$79,99
+Plano trimestral
+🚀 Melhor opção estética:
+Pequeno acima:
+De R$99,99
+Grande:
+R$79,99
+Pequeno abaixo:
+no plano trimestral
+📌 Mesma lógica nos outros 2.
+🔥 Vou te mandar só o trecho corrigido dos cards (mais fácil que trocar tudo).
+Responde:
+manda trecho
+Que eu te entrego pronto.
+
+
+me entrega pronto
+
+<div class="cards">
+
+<div class="card">
+<h3>Start</h3>
+<div class="space">250 GB</div>
+
+<div class="small" style="text-decoration:line-through;opacity:.7;">R$ 99,99 mensal</div>
+<div class="price">R$ 79,99</div>
+<div class="small">no plano trimestral</div>
+
+<ul>
+<li>✔ Ideal para uso pessoal</li>
+<li>✔ Documentos e backups</li>
+<li>✔ Acesso em todos dispositivos</li>
+</ul>
+
+<a class="btn-primary" href="https://wa.me/5551998980121?text=Olá! Tenho interesse no Plano Start 250GB da NuvemSul." target="_blank">Quero este plano</a>
+</div>
+
+
+<div class="card featured">
+<div class="badge">Mais escolhido</div>
+<h3>Pro</h3>
+<div class="space">500 GB</div>
+
+<div class="small" style="text-decoration:line-through;opacity:.8;">R$ 149,99 mensal</div>
+<div class="price">R$ 129,99</div>
+<div class="small">no plano trimestral</div>
+
+<ul>
+<li>✔ Empresas e profissionais</li>
+<li>✔ Compartilhamento avançado</li>
+<li>✔ Suporte prioritário</li>
+</ul>
+
+<a class="btn-primary" href="https://wa.me/5551998980121?text=Olá! Tenho interesse no Plano Pro 500GB da NuvemSul." target="_blank">Quero este plano</a>
+</div>
+
+
+<div class="card">
+<h3>Business</h3>
+<div class="space">1 TB</div>
+
+<div class="small" style="text-decoration:line-through;opacity:.7;">R$ 249,99 mensal</div>
+<div class="price">R$ 199,99</div>
+<div class="small">no plano trimestral</div>
+
+<ul>
+<li>✔ Equipes e escritórios</li>
+<li>✔ Alto volume de arquivos</li>
+<li>✔ Estrutura corporativa</li>
+</ul>
+
+<a class="btn-primary" href="https://wa.me/5551998980121?text=Olá! Tenho interesse no Plano Business 1TB da NuvemSul." target="_blank">Quero este plano</a>
+</div>
+
+</div>
+
+Não, eu quero que tu faça todo o código e faça as alterações nele. Ah, a gente faz todas as alterações, mas não quero que mude nada. Então refaz todo o código do zero, mas deixa quase tudo igual, só muda isso que faltou.
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>NuvemSul | Cloud Profissional</title>
-<meta name="description" content="Armazenamento em nuvem profissional para empresas e pessoas. Segurança, velocidade e suporte humano.">
+<meta name="description" content="Armazenamento em nuvem profissional para empresas e pessoas.">
 
 <style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
-html{
-scroll-behavior:smooth;
-}
-
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
 body{
-font-family:Arial, Helvetica, sans-serif;
+font-family:Arial,Helvetica,sans-serif;
 background:#050b16;
-color:#ffffff;
+color:#fff;
 line-height:1.5;
 }
-
-a{
-text-decoration:none;
-color:white;
-}
-
-.container{
-max-width:1200px;
-margin:auto;
-padding:0 24px;
-}
+a{text-decoration:none;color:#fff;}
+.container{max-width:1200px;margin:auto;padding:0 24px;}
 
 /* HEADER */
 header{
 position:sticky;
 top:0;
 z-index:1000;
-background:rgba(5,11,22,0.92);
+background:rgba(5,11,22,.92);
 backdrop-filter:blur(10px);
-border-bottom:1px solid rgba(255,255,255,0.05);
+border-bottom:1px solid rgba(255,255,255,.05);
 }
-
 .nav{
 display:flex;
 justify-content:space-between;
@@ -52,46 +134,26 @@ align-items:center;
 padding:18px 0;
 gap:20px;
 }
-
 .logo{
 display:flex;
 align-items:center;
-gap:12px;
+gap:10px;
 font-size:26px;
 font-weight:700;
 color:#4da3ff;
 }
-
-.logo img{
-height:42px;
-width:auto;
-}
-
 .menu{
 display:flex;
-gap:26px;
+gap:24px;
 align-items:center;
 }
-
-.menu a{
-color:#d9e8ff;
-font-size:15px;
-transition:0.2s;
-}
-
-.menu a:hover{
-color:#4da3ff;
-}
-
+.menu a{color:#d9e8ff;font-size:15px;}
+.menu a:hover{color:#4da3ff;}
 .btn-topo{
 padding:12px 18px;
 background:#0d6efd;
 border-radius:10px;
 font-weight:700;
-}
-
-.btn-topo:hover{
-background:#2a7fff;
 }
 
 /* HERO */
@@ -100,169 +162,140 @@ min-height:92vh;
 display:flex;
 align-items:center;
 background:
-linear-gradient(rgba(5,11,22,0.78), rgba(5,11,22,0.92)),
+linear-gradient(rgba(5,11,22,.78),rgba(5,11,22,.92)),
 url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
 }
-
 .hero-grid{
 display:grid;
-grid-template-columns:1.2fr 0.8fr;
+grid-template-columns:1.2fr .8fr;
 gap:40px;
 align-items:center;
 padding:80px 0;
 }
-
 .tag{
 display:inline-block;
 padding:8px 14px;
-border:1px solid rgba(77,163,255,0.35);
+border:1px solid rgba(77,163,255,.35);
 border-radius:999px;
 font-size:13px;
 color:#84bbff;
 margin-bottom:22px;
 }
-
 .hero h1{
 font-size:58px;
 line-height:1.08;
 margin-bottom:18px;
 max-width:720px;
 }
-
 .hero p{
 font-size:20px;
 color:#c7d7ef;
 max-width:620px;
 margin-bottom:30px;
 }
-
 .hero-buttons{
 display:flex;
 gap:16px;
 flex-wrap:wrap;
 }
-
 .btn-primary{
 background:#0d6efd;
 padding:15px 24px;
 border-radius:12px;
 font-weight:700;
+display:inline-block;
+text-align:center;
 }
-
-.btn-primary:hover{
-background:#2a7fff;
-}
-
 .btn-secondary{
 padding:15px 24px;
 border-radius:12px;
-border:1px solid rgba(255,255,255,0.14);
+border:1px solid rgba(255,255,255,.14);
 color:#dbe8ff;
+display:inline-block;
+text-align:center;
 }
-
 .hero-card{
-background:rgba(10,20,38,0.82);
-border:1px solid rgba(77,163,255,0.18);
+background:rgba(10,20,38,.82);
+border:1px solid rgba(77,163,255,.18);
 padding:28px;
 border-radius:22px;
-box-shadow:0 20px 60px rgba(0,0,0,0.35);
 }
-
 .hero-card h3{
 font-size:22px;
 margin-bottom:18px;
 }
-
 .hero-list{
 display:grid;
 gap:14px;
 }
-
 .hero-item{
 display:flex;
 justify-content:space-between;
 padding:12px 14px;
-background:rgba(255,255,255,0.03);
+background:rgba(255,255,255,.03);
 border-radius:12px;
 color:#d9e8ff;
 }
 
 /* SECTION */
-section{
-padding:85px 0;
-}
+section{padding:85px 0;}
+.title-center{text-align:center;margin-bottom:45px;}
+.title-center h2{font-size:42px;margin-bottom:12px;}
+.title-center p{color:#b8c8e0;font-size:18px;}
 
-.title-center{
-text-align:center;
-margin-bottom:45px;
-}
-
-.title-center h2{
-font-size:42px;
-margin-bottom:12px;
-}
-
-.title-center p{
-color:#b8c8e0;
-font-size:18px;
-}
-
-/* PLANS */
+/* CARDS */
 .cards{
 display:grid;
 grid-template-columns:repeat(3,1fr);
 gap:24px;
 }
-
 .card{
 background:#0b1424;
-border:1px solid rgba(255,255,255,0.05);
-padding:30px;
+border:1px solid rgba(255,255,255,.05);
+padding:34px;
 border-radius:22px;
-transition:0.25s;
+min-height:560px;
+display:flex;
+flex-direction:column;
+justify-content:space-between;
 }
-
-.card:hover{
-transform:translateY(-6px);
-border-color:rgba(77,163,255,0.28);
-}
-
 .card.featured{
 background:linear-gradient(180deg,#0d6efd,#0b3f91);
 transform:scale(1.03);
 }
-
 .badge{
 display:inline-block;
 font-size:12px;
 padding:6px 10px;
 border-radius:999px;
-background:rgba(255,255,255,0.14);
+background:rgba(255,255,255,.14);
 margin-bottom:16px;
 }
-
 .card h3{
 font-size:28px;
 margin-bottom:8px;
 }
-
 .space{
 color:#a9d0ff;
-margin-bottom:20px;
+margin-bottom:18px;
 }
-
+.old-price{
+font-size:15px;
+opacity:.75;
+text-decoration:line-through;
+margin-bottom:6px;
+}
 .price{
 font-size:44px;
 font-weight:800;
+line-height:1;
 margin-bottom:8px;
 }
-
 .small{
-color:#c6d6ee;
 font-size:14px;
-margin-bottom:22px;
+color:#c6d6ee;
+margin-bottom:24px;
 }
-
 .card ul{
 list-style:none;
 display:grid;
@@ -271,24 +304,17 @@ margin-bottom:28px;
 color:#d8e5fa;
 }
 
-.card .btn-primary{
-display:block;
-text-align:center;
-}
-
 /* TRUST */
 .trust{
 display:grid;
 grid-template-columns:repeat(4,1fr);
 gap:18px;
 }
-
 .trust-box{
 background:#0b1424;
 padding:22px;
 border-radius:18px;
 text-align:center;
-color:#d8e5fa;
 }
 
 /* ABOUT */
@@ -297,7 +323,6 @@ display:grid;
 grid-template-columns:1fr 1fr;
 gap:26px;
 }
-
 .about-box{
 background:#0b1424;
 padding:30px;
@@ -307,7 +332,7 @@ border-radius:22px;
 /* FOOTER */
 footer{
 padding:40px 0;
-border-top:1px solid rgba(255,255,255,0.05);
+border-top:1px solid rgba(255,255,255,.05);
 text-align:center;
 color:#92a8c7;
 font-size:14px;
@@ -315,55 +340,17 @@ font-size:14px;
 
 /* RESPONSIVO */
 @media(max-width:980px){
-
-.hero-grid,
-.cards,
-.about,
-.trust{
-grid-template-columns:1fr;
+.hero-grid,.cards,.trust,.about{grid-template-columns:1fr;}
+.hero h1{font-size:42px;}
+.menu{display:none;}
+.card.featured{transform:none;}
+.card{min-height:auto;}
 }
-
-.hero h1{
-font-size:42px;
-}
-
-.menu{
-display:none;
-}
-
-.card.featured{
-transform:none;
-}
-
-.hero{
-min-height:auto;
-}
-
-}
-
 @media(max-width:600px){
-
-.hero h1{
-font-size:34px;
-}
-
-.title-center h2{
-font-size:32px;
-}
-
-.price{
-font-size:36px;
-}
-
-.hero-buttons{
-flex-direction:column;
-}
-
-.btn-primary,
-.btn-secondary{
-text-align:center;
-}
-
+.hero h1{font-size:34px;}
+.title-center h2{font-size:32px;}
+.price{font-size:36px;}
+.hero-buttons{flex-direction:column;}
 }
 </style>
 </head>
@@ -372,11 +359,7 @@ text-align:center;
 
 <header>
 <div class="container nav">
-
-<div class="logo">
-<img src="https://i.imgur.com/VY4QwW8.png" alt="NuvemSul">
-<span>NuvemSul</span>
-</div>
+<div class="logo">NuvemSul</div>
 
 <div class="menu">
 <a href="#planos">Planos</a>
@@ -384,7 +367,6 @@ text-align:center;
 <a href="#contato">Contato</a>
 <a class="btn-topo" href="https://wa.me/5551998980121" target="_blank">WhatsApp</a>
 </div>
-
 </div>
 </header>
 
@@ -417,7 +399,6 @@ profissionais e pessoas que valorizam segurança e desempenho.
 <div class="hero-item"><span>Atendimento humano</span><span>✔</span></div>
 <div class="hero-item"><span>Infraestrutura confiável</span><span>✔</span></div>
 </div>
-
 </div>
 
 </div>
@@ -433,67 +414,79 @@ profissionais e pessoas que valorizam segurança e desempenho.
 
 <div class="cards">
 
+<!-- START -->
 <div class="card">
+<div>
 <h3>Start</h3>
 <div class="space">250 GB</div>
+
+<div class="old-price">R$ 99,99 mensal</div>
 <div class="price">R$ 79,99</div>
-<div class="small">Plano promocional</div>
+<div class="small">no plano trimestral</div>
 
 <ul>
 <li>✔ Ideal para uso pessoal</li>
 <li>✔ Documentos e backups</li>
 <li>✔ Acesso em todos dispositivos</li>
 </ul>
+</div>
 
 <a class="btn-primary" href="https://wa.me/5551998980121?text=Olá! Tenho interesse no Plano Start 250GB da NuvemSul." target="_blank">Quero este plano</a>
 </div>
 
+<!-- PRO -->
 <div class="card featured">
+<div>
 <div class="badge">Mais escolhido</div>
 <h3>Pro</h3>
 <div class="space">500 GB</div>
+
+<div class="old-price">R$ 149,99 mensal</div>
 <div class="price">R$ 129,99</div>
-<div class="small">Plano promocional</div>
+<div class="small">no plano trimestral</div>
 
 <ul>
 <li>✔ Empresas e profissionais</li>
 <li>✔ Compartilhamento avançado</li>
 <li>✔ Suporte prioritário</li>
 </ul>
+</div>
 
 <a class="btn-primary" href="https://wa.me/5551998980121?text=Olá! Tenho interesse no Plano Pro 500GB da NuvemSul." target="_blank">Quero este plano</a>
 </div>
 
+<!-- BUSINESS -->
 <div class="card">
+<div>
 <h3>Business</h3>
 <div class="space">1 TB</div>
+
+<div class="old-price">R$ 249,99 mensal</div>
 <div class="price">R$ 199,99</div>
-<div class="small">Plano promocional</div>
+<div class="small">no plano trimestral</div>
 
 <ul>
 <li>✔ Equipes e escritórios</li>
 <li>✔ Alto volume de arquivos</li>
 <li>✔ Estrutura corporativa</li>
 </ul>
+</div>
 
 <a class="btn-primary" href="https://wa.me/5551998980121?text=Olá! Tenho interesse no Plano Business 1TB da NuvemSul." target="_blank">Quero este plano</a>
 </div>
 
 </div>
-
 </div>
 </section>
 
 <section>
 <div class="container">
-
 <div class="trust">
 <div class="trust-box">Servidor confiável</div>
 <div class="trust-box">Privacidade total</div>
 <div class="trust-box">Suporte humano</div>
 <div class="trust-box">Ativação rápida</div>
 </div>
-
 </div>
 </section>
 
@@ -517,7 +510,6 @@ com atendimento próximo, tecnologia moderna e postura corporativa.
 </div>
 
 </div>
-
 </div>
 </section>
 
@@ -529,3 +521,5 @@ com atendimento próximo, tecnologia moderna e postura corporativa.
 
 </body>
 </html>
+
+
