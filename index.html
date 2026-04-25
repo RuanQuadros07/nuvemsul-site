@@ -3,136 +3,528 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NuvemSul</title>
+<title>NuvemSul | Cloud Profissional</title>
+<meta name="description" content="Armazenamento em nuvem profissional para empresas e pessoas. Segurança, velocidade e suporte humano.">
+
 <style>
-body{
+*{
 margin:0;
-font-family:Arial, sans-serif;
-background:#03132b;
-color:white;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
 scroll-behavior:smooth;
 }
+
+body{
+font-family:Arial, Helvetica, sans-serif;
+background:#050b16;
+color:#ffffff;
+line-height:1.5;
+}
+
+a{
+text-decoration:none;
+color:white;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+padding:0 24px;
+}
+
+/* HEADER */
 header{
-padding:20px 40px;
+position:sticky;
+top:0;
+z-index:1000;
+background:rgba(5,11,22,0.92);
+backdrop-filter:blur(10px);
+border-bottom:1px solid rgba(255,255,255,0.05);
+}
+
+.nav{
 display:flex;
 justify-content:space-between;
 align-items:center;
-background:#051a38;
-position:sticky;
-top:0;
-}
-header a{
-color:white;
-text-decoration:none;
-margin-left:20px;
-}
-.hero{
-padding:80px 30px;
-text-align:center;
-}
-.hero h1{
-font-size:48px;
-margin-bottom:10px;
-}
-.hero p{
-font-size:20px;
-color:#9cc8ff;
-}
-.btn{
-display:inline-block;
-padding:14px 25px;
-background:#0d6efd;
-color:white;
-text-decoration:none;
-border-radius:10px;
-margin-top:20px;
-}
-.section{
-padding:70px 30px;
-max-width:1200px;
-margin:auto;
-}
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+padding:18px 0;
 gap:20px;
 }
-.card{
-background:#08244b;
-padding:25px;
-border-radius:15px;
+
+.logo{
+display:flex;
+align-items:center;
+gap:12px;
+font-size:26px;
+font-weight:700;
+color:#4da3ff;
 }
+
+.logo img{
+height:42px;
+width:auto;
+}
+
+.menu{
+display:flex;
+gap:26px;
+align-items:center;
+}
+
+.menu a{
+color:#d9e8ff;
+font-size:15px;
+transition:0.2s;
+}
+
+.menu a:hover{
+color:#4da3ff;
+}
+
+.btn-topo{
+padding:12px 18px;
+background:#0d6efd;
+border-radius:10px;
+font-weight:700;
+}
+
+.btn-topo:hover{
+background:#2a7fff;
+}
+
+/* HERO */
+.hero{
+min-height:92vh;
+display:flex;
+align-items:center;
+background:
+linear-gradient(rgba(5,11,22,0.78), rgba(5,11,22,0.92)),
+url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+}
+
+.hero-grid{
+display:grid;
+grid-template-columns:1.2fr 0.8fr;
+gap:40px;
+align-items:center;
+padding:80px 0;
+}
+
+.tag{
+display:inline-block;
+padding:8px 14px;
+border:1px solid rgba(77,163,255,0.35);
+border-radius:999px;
+font-size:13px;
+color:#84bbff;
+margin-bottom:22px;
+}
+
+.hero h1{
+font-size:58px;
+line-height:1.08;
+margin-bottom:18px;
+max-width:720px;
+}
+
+.hero p{
+font-size:20px;
+color:#c7d7ef;
+max-width:620px;
+margin-bottom:30px;
+}
+
+.hero-buttons{
+display:flex;
+gap:16px;
+flex-wrap:wrap;
+}
+
+.btn-primary{
+background:#0d6efd;
+padding:15px 24px;
+border-radius:12px;
+font-weight:700;
+}
+
+.btn-primary:hover{
+background:#2a7fff;
+}
+
+.btn-secondary{
+padding:15px 24px;
+border-radius:12px;
+border:1px solid rgba(255,255,255,0.14);
+color:#dbe8ff;
+}
+
+.hero-card{
+background:rgba(10,20,38,0.82);
+border:1px solid rgba(77,163,255,0.18);
+padding:28px;
+border-radius:22px;
+box-shadow:0 20px 60px rgba(0,0,0,0.35);
+}
+
+.hero-card h3{
+font-size:22px;
+margin-bottom:18px;
+}
+
+.hero-list{
+display:grid;
+gap:14px;
+}
+
+.hero-item{
+display:flex;
+justify-content:space-between;
+padding:12px 14px;
+background:rgba(255,255,255,0.03);
+border-radius:12px;
+color:#d9e8ff;
+}
+
+/* SECTION */
+section{
+padding:85px 0;
+}
+
+.title-center{
+text-align:center;
+margin-bottom:45px;
+}
+
+.title-center h2{
+font-size:42px;
+margin-bottom:12px;
+}
+
+.title-center p{
+color:#b8c8e0;
+font-size:18px;
+}
+
+/* PLANS */
+.cards{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:24px;
+}
+
+.card{
+background:#0b1424;
+border:1px solid rgba(255,255,255,0.05);
+padding:30px;
+border-radius:22px;
+transition:0.25s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+border-color:rgba(77,163,255,0.28);
+}
+
+.card.featured{
+background:linear-gradient(180deg,#0d6efd,#0b3f91);
+transform:scale(1.03);
+}
+
+.badge{
+display:inline-block;
+font-size:12px;
+padding:6px 10px;
+border-radius:999px;
+background:rgba(255,255,255,0.14);
+margin-bottom:16px;
+}
+
+.card h3{
+font-size:28px;
+margin-bottom:8px;
+}
+
+.space{
+color:#a9d0ff;
+margin-bottom:20px;
+}
+
+.price{
+font-size:44px;
+font-weight:800;
+margin-bottom:8px;
+}
+
+.small{
+color:#c6d6ee;
+font-size:14px;
+margin-bottom:22px;
+}
+
+.card ul{
+list-style:none;
+display:grid;
+gap:12px;
+margin-bottom:28px;
+color:#d8e5fa;
+}
+
+.card .btn-primary{
+display:block;
+text-align:center;
+}
+
+/* TRUST */
+.trust{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:18px;
+}
+
+.trust-box{
+background:#0b1424;
+padding:22px;
+border-radius:18px;
+text-align:center;
+color:#d8e5fa;
+}
+
+/* ABOUT */
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:26px;
+}
+
+.about-box{
+background:#0b1424;
+padding:30px;
+border-radius:22px;
+}
+
+/* FOOTER */
+footer{
+padding:40px 0;
+border-top:1px solid rgba(255,255,255,0.05);
+text-align:center;
+color:#92a8c7;
+font-size:14px;
+}
+
+/* RESPONSIVO */
+@media(max-width:980px){
+
+.hero-grid,
+.cards,
+.about,
+.trust{
+grid-template-columns:1fr;
+}
+
+.hero h1{
+font-size:42px;
+}
+
+.menu{
+display:none;
+}
+
+.card.featured{
+transform:none;
+}
+
+.hero{
+min-height:auto;
+}
+
+}
+
+@media(max-width:600px){
+
+.hero h1{
+font-size:34px;
+}
+
+.title-center h2{
+font-size:32px;
+}
+
 .price{
 font-size:36px;
-font-weight:bold;
-margin:15px 0;
 }
-footer{
-padding:40px;
+
+.hero-buttons{
+flex-direction:column;
+}
+
+.btn-primary,
+.btn-secondary{
 text-align:center;
-background:#051a38;
-color:#aaa;
+}
+
 }
 </style>
 </head>
+
 <body>
 
 <header>
-<div><strong>NuvemSul</strong></div>
-<nav>
+<div class="container nav">
+
+<div class="logo">
+<img src="https://i.imgur.com/VY4QwW8.png" alt="NuvemSul">
+<span>NuvemSul</span>
+</div>
+
+<div class="menu">
 <a href="#planos">Planos</a>
 <a href="#sobre">Quem Somos</a>
 <a href="#contato">Contato</a>
-</nav>
+<a class="btn-topo" href="https://wa.me/5551998980121" target="_blank">WhatsApp</a>
+</div>
+
+</div>
 </header>
 
 <section class="hero">
+<div class="container hero-grid">
+
+<div>
+<div class="tag">Cloud profissional brasileira</div>
+
 <h1>Seus arquivos seguros, rápidos e sempre por perto.</h1>
-<p>Cloud profissional para empresas e pessoas.</p>
-<a class="btn" href="https://wa.me/5551998980121" target="_blank">Falar no WhatsApp</a>
+
+<p>
+Armazenamento em nuvem premium para empresas, escritórios,
+profissionais e pessoas que valorizam segurança e desempenho.
+</p>
+
+<div class="hero-buttons">
+<a class="btn-primary" href="#planos">Ver Planos</a>
+<a class="btn-secondary" href="https://wa.me/5551998980121" target="_blank">Falar Conosco</a>
+</div>
+</div>
+
+<div class="hero-card">
+<h3>Por que escolher a NuvemSul?</h3>
+
+<div class="hero-list">
+<div class="hero-item"><span>Backup automático</span><span>✔</span></div>
+<div class="hero-item"><span>Sincronização PC + Celular</span><span>✔</span></div>
+<div class="hero-item"><span>Compartilhamento seguro</span><span>✔</span></div>
+<div class="hero-item"><span>Atendimento humano</span><span>✔</span></div>
+<div class="hero-item"><span>Infraestrutura confiável</span><span>✔</span></div>
+</div>
+
+</div>
+
+</div>
 </section>
 
-<section class="section" id="planos">
-<h2>Planos</h2>
+<section id="planos">
+<div class="container">
+
+<div class="title-center">
+<h2>Planos empresariais</h2>
+<p>Soluções escaláveis para o tamanho da sua operação.</p>
+</div>
+
 <div class="cards">
 
 <div class="card">
 <h3>Start</h3>
-<p>250GB</p>
-<div class="price">R$79,99/mês</div>
-<a class="btn" href="https://wa.me/5551998980121?text=Tenho interesse no Plano Start 250GB">Quero este plano</a>
+<div class="space">250 GB</div>
+<div class="price">R$ 79,99</div>
+<div class="small">Plano promocional</div>
+
+<ul>
+<li>✔ Ideal para uso pessoal</li>
+<li>✔ Documentos e backups</li>
+<li>✔ Acesso em todos dispositivos</li>
+</ul>
+
+<a class="btn-primary" href="https://wa.me/5551998980121?text=Olá! Tenho interesse no Plano Start 250GB da NuvemSul." target="_blank">Quero este plano</a>
 </div>
 
-<div class="card">
+<div class="card featured">
+<div class="badge">Mais escolhido</div>
 <h3>Pro</h3>
-<p>500GB</p>
-<div class="price">R$129,99/mês</div>
-<a class="btn" href="https://wa.me/5551998980121?text=Tenho interesse no Plano Pro 500GB">Quero este plano</a>
+<div class="space">500 GB</div>
+<div class="price">R$ 129,99</div>
+<div class="small">Plano promocional</div>
+
+<ul>
+<li>✔ Empresas e profissionais</li>
+<li>✔ Compartilhamento avançado</li>
+<li>✔ Suporte prioritário</li>
+</ul>
+
+<a class="btn-primary" href="https://wa.me/5551998980121?text=Olá! Tenho interesse no Plano Pro 500GB da NuvemSul." target="_blank">Quero este plano</a>
 </div>
 
 <div class="card">
 <h3>Business</h3>
-<p>1TB</p>
-<div class="price">R$199,99/mês</div>
-<a class="btn" href="https://wa.me/5551998980121?text=Tenho interesse no Plano Business 1TB">Quero este plano</a>
+<div class="space">1 TB</div>
+<div class="price">R$ 199,99</div>
+<div class="small">Plano promocional</div>
+
+<ul>
+<li>✔ Equipes e escritórios</li>
+<li>✔ Alto volume de arquivos</li>
+<li>✔ Estrutura corporativa</li>
+</ul>
+
+<a class="btn-primary" href="https://wa.me/5551998980121?text=Olá! Tenho interesse no Plano Business 1TB da NuvemSul." target="_blank">Quero este plano</a>
+</div>
+
 </div>
 
 </div>
 </section>
 
-<section class="section" id="sobre">
+<section>
+<div class="container">
+
+<div class="trust">
+<div class="trust-box">Servidor confiável</div>
+<div class="trust-box">Privacidade total</div>
+<div class="trust-box">Suporte humano</div>
+<div class="trust-box">Ativação rápida</div>
+</div>
+
+</div>
+</section>
+
+<section id="sobre">
+<div class="container">
+
+<div class="about">
+
+<div class="about-box">
 <h2>Quem Somos</h2>
-<p>A NuvemSul oferece armazenamento em nuvem profissional, com foco em segurança, desempenho e atendimento próximo.</p>
-</section>
+<p style="margin-top:16px;color:#c5d5ee;">
+A NuvemSul nasceu para oferecer armazenamento em nuvem profissional
+com atendimento próximo, tecnologia moderna e postura corporativa.
+</p>
+</div>
 
-<section class="section" id="contato">
+<div class="about-box" id="contato">
 <h2>Contato</h2>
-<p>WhatsApp: (51) 99898-0121</p>
-<p>Email: contato@nuvemsul.com.br</p>
+<p style="margin-top:16px;color:#c5d5ee;">WhatsApp: (51) 99898-0121</p>
+<p style="margin-top:8px;color:#c5d5ee;">E-mail: nuvemsulcloud@gmail.com</p>
+</div>
+
+</div>
+
+</div>
 </section>
 
 <footer>
-© 2026 NuvemSul
+<div class="container">
+© 2026 NuvemSul • nuvemsul.com.br
+</div>
 </footer>
 
 </body>
