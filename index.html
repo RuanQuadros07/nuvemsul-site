@@ -4,8 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>NuvemSul | Cloud profissional brasileira</title>
-
-  <link rel="icon" type="image/png" href="logo.png">
+<link rel="icon" type="image/png" href="logo.png">
 
 <style>
 *{
@@ -236,6 +235,15 @@ font-size:72px;
 font-weight:800;
 line-height:1;
 margin-bottom:8px;
+white-space:nowrap;
+}
+
+.card.featured .price{
+font-size:62px;
+}
+
+.cards .card:nth-child(3) .price{
+font-size:60px;
 }
 
 .desc{
@@ -267,40 +275,41 @@ font-size:24px;
 .grid4{
 display:grid;
 grid-template-columns:repeat(4,1fr);
-gap:22px;
-margin-top:30px;
+gap:14px;
+margin-top:0;
 }
 
 .mini{
 background:#071631;
-padding:28px;
-border-radius:24px;
+padding:18px;
+border-radius:18px;
 text-align:center;
-font-size:24px;
+font-size:19px;
+font-weight:600;
 }
 
 .about{
 background:#061227;
-border-radius:28px;
-padding:50px;
+border-radius:24px;
+padding:34px 40px;
 }
 
 .about p{
-font-size:28px;
-line-height:1.7;
+font-size:22px;
+line-height:1.6;
 color:#cfd8ea;
 }
 
 footer{
-padding:40px;
+padding:28px;
 text-align:center;
-font-size:24px;
+font-size:18px;
 color:#9ea8c0;
 border-top:1px solid rgba(255,255,255,.05);
-margin-top:50px;
+margin-top:25px;
 }
 
-/* MOBILE AJUSTADO */
+/* MOBILE ORIGINAL PRESERVADO */
 @media (max-width:768px){
 
 header{
@@ -332,7 +341,6 @@ font-size:12px;
 font-weight:600;
 }
 
-/* AQUI FOI O AJUSTE DO ESPAÇO */
 .hero{
 padding:115px 22px 70px;
 background-position:center;
@@ -406,7 +414,9 @@ font-size:24px;
 font-size:22px;
 }
 
-.price{
+.price,
+.card.featured .price,
+.cards .card:nth-child(3) .price{
 font-size:64px;
 }
 
@@ -420,6 +430,7 @@ font-size:22px;
 
 .grid4{
 grid-template-columns:1fr 1fr;
+gap:16px;
 }
 
 .mini{
@@ -560,7 +571,7 @@ padding:30px 18px;
 <section id="quem">
 <div class="container">
 <div class="about">
-<h2 class="title" style="text-align:left;margin-bottom:24px;">Quem Somos</h2>
+<h2 class="title" style="text-align:left;margin-bottom:20px;">Quem Somos</h2>
 <p>A NuvemSul nasceu para oferecer armazenamento em nuvem profissional com atendimento próximo, tecnologia moderna e postura corporativa.</p>
 </div>
 </div>
@@ -569,7 +580,7 @@ padding:30px 18px;
 <section id="contato">
 <div class="container">
 <div class="about">
-<h2 class="title" style="text-align:left;margin-bottom:24px;">Contato</h2>
+<h2 class="title" style="text-align:left;margin-bottom:20px;">Contato</h2>
 <p>WhatsApp: (51) 99898-0121</p>
 <p>E-mail: nuvensulcloud@gmail.com</p>
 </div>
@@ -578,8 +589,8 @@ padding:30px 18px;
 
 <footer>
 © 2026 NuvemSul • nuvemsul.com.br<br><br>
-<a href="termos.html" style="color:#9fc8ff;text-decoration:none;">Termos de Uso</a> • 
-<a href="privacidade.html"style="color:#9fc8ff;text-decoration:none;">Política de Privacidade</a>
+<a href="termos.html" style="color:#9fc8ff;text-decoration:none;">Termos de Uso</a> •
+<a href="privacidade.html" style="color:#9fc8ff;text-decoration:none;">Política de Privacidade</a>
 </footer>
 
 </body>
