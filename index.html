@@ -31,9 +31,9 @@ position:sticky;
 top:0;
 z-index:1000;
 background:rgba(5,11,22,.92);
-backdrop-filter:blur(10px);
+backdrop-filter:blur(10px);F@me
 border-bottom:1px solid rgba(255,255,255,.05);
-}
+}FF
 
 .nav{
 display:flex;
@@ -302,70 +302,42 @@ font-size:14px;
 }
 
 /* RESPONSIVO */
-@media(max-width:980px){
+@media (max-width:768px){
 
-.hero-grid,
+section{
+padding:55px 0 !important;
+}
+
+.hero{
+padding-top:70px !important;
+padding-bottom:45px !important;
+min-height:auto !important;
+}
+
+.hero-content{
+margin-top:0 !important;
+}
+
+.container{
+padding-left:18px !important;
+padding-right:18px !important;
+}
+
+h1{
+margin-bottom:18px !important;
+}
+
+h2{
+margin-bottom:14px !important;
+}
+
 .cards,
-.trust,
-.about{
-grid-template-columns:1fr;
+.planos-grid,
+.grid{
+gap:18px !important;
 }
 
-.hero h1{font-size:42px;}
-
-.menu{display:none;}
-
-.card.featured{transform:none;}
-
-.card{min-height:auto;}
-
-.logo img{height:48px;}
-
 }
-
-@media(max-width:600px){
-
-.hero h1{font-size:34px;}
-
-.title-center h2{font-size:32px;}
-
-.price{font-size:36px;}
-
-.hero-buttons{flex-direction:column;}
-
-.logo img{height:42px;}
-
-}
-  @media (max-width: 768px){
-
-  .hero{
-    min-height:auto !important;
-    padding: 110px 22px 60px !important;
-    display:flex;
-    align-items:flex-start !important;
-    justify-content:center;
-  }
-
-  .hero-content{
-    margin-top:0 !important;
-    max-width:100% !important;
-  }
-
-  .hero h1{
-    font-size:52px !important;
-    line-height:1.05 !important;
-    margin-bottom:18px !important;
-  }
-
-  .hero p{
-    font-size:19px !important;
-    line-height:1.5 !important;
-    margin-bottom:28px !important;
-  }
-
-  .badge{
-    margin-bottom:22px !important;
-  }
 
 }
 </style>
