@@ -59,6 +59,7 @@ text-decoration:none;
 font-size:16px;
 font-weight:500;
 transition:.3s;
+white-space:nowrap;
 }
 
 .nav-links a:hover{
@@ -308,40 +309,44 @@ margin-top:50px;
 @media (max-width:768px){
 
 header{
-padding:16px 18px;
+padding:10px 12px;
 }
 
 .navbar{
+display:flex;
 flex-direction:column;
 align-items:center;
-gap:14px;
+gap:8px;
 }
 
 .logo img{
-height:46px;
+height:34px;
 }
 
 .nav-links{
 display:flex;
 justify-content:center;
 align-items:center;
-gap:18px;
-flex-wrap:wrap;
+gap:10px;
+flex-wrap:nowrap;
 width:100%;
 }
 
-.nav-links a{
-font-size:16px;
-}
-
+.nav-links a,
 .nav-links .btn{
-padding:12px 24px;
-border-radius:12px;
-margin-top:4px;
+font-size:12px;
+font-weight:600;
+padding:0;
+margin:0;
+background:none;
+border:none;
+border-radius:0;
+white-space:nowrap;
+color:#fff;
 }
 
 .hero{
-padding:150px 22px 70px;
+padding:185px 22px 70px;
 }
 
 .hero-content{
@@ -350,12 +355,12 @@ gap:30px;
 }
 
 .hero h1{
-font-size:58px;
+font-size:52px;
 line-height:1.05;
 }
 
 .hero p{
-font-size:22px;
+font-size:21px;
 }
 
 .badge{
@@ -460,7 +465,7 @@ padding:30px 18px;
 <a href="#planos">Planos</a>
 <a href="#quem">Quem Somos</a>
 <a href="#contato">Contato</a>
-<a class="btn" href="https://wa.me/5551998980121" target="_blank">WhatsApp</a>
+<a href="https://wa.me/5551998980121" target="_blank">WhatsApp</a>
 </div>
 
 </div>
@@ -567,9 +572,7 @@ padding:30px 18px;
 <div class="container">
 <div class="about">
 <h2 class="title" style="text-align:left;margin-bottom:24px;">Quem Somos</h2>
-<p>
-A NuvemSul nasceu para oferecer armazenamento em nuvem profissional com atendimento próximo, tecnologia moderna e postura corporativa.
-</p>
+<p>A NuvemSul nasceu para oferecer armazenamento em nuvem profissional com atendimento próximo, tecnologia moderna e postura corporativa.</p>
 </div>
 </div>
 </section>
