@@ -16,11 +16,10 @@ scroll-behavior:smooth;
 body{
 font-family:Arial, Helvetica, sans-serif;
 background:#020b1f;
-color:white;
+color:#fff;
 overflow-x:hidden;
 }
 
-/* HEADER */
 header{
 width:100%;
 padding:18px 60px;
@@ -28,17 +27,17 @@ position:fixed;
 top:0;
 left:0;
 z-index:999;
-background:rgba(2,11,31,0.92);
+background:rgba(2,11,31,.92);
 backdrop-filter:blur(12px);
-border-bottom:1px solid rgba(255,255,255,0.05);
+border-bottom:1px solid rgba(255,255,255,.05);
 }
 
 .navbar{
+max-width:1400px;
+margin:auto;
 display:flex;
 justify-content:space-between;
 align-items:center;
-max-width:1400px;
-margin:auto;
 }
 
 .logo img{
@@ -49,17 +48,17 @@ display:block;
 
 .nav-links{
 display:flex;
-align-items:center;
 gap:28px;
+align-items:center;
 }
 
 .nav-links a{
 color:#fff;
 text-decoration:none;
 font-size:16px;
-font-weight:500;
-transition:.3s;
+font-weight:600;
 white-space:nowrap;
+transition:.3s;
 }
 
 .nav-links a:hover{
@@ -71,9 +70,10 @@ background:linear-gradient(135deg,#1f6fff,#3e86ff);
 padding:14px 28px;
 border-radius:12px;
 font-weight:700;
+text-decoration:none;
+color:#fff;
 }
 
-/* HERO */
 .hero{
 padding:170px 60px 100px;
 background:
@@ -127,11 +127,10 @@ flex-wrap:wrap;
 padding:14px 28px;
 border:1px solid rgba(255,255,255,.15);
 border-radius:12px;
-color:white;
 text-decoration:none;
+color:#fff;
 }
 
-/* HERO CARD */
 .hero-card{
 background:rgba(8,20,50,.55);
 backdrop-filter:blur(18px);
@@ -159,7 +158,6 @@ justify-content:space-between;
 font-size:20px;
 }
 
-/* PLANOS */
 section{
 padding:90px 60px;
 }
@@ -250,23 +248,20 @@ display:grid;
 gap:18px;
 margin-bottom:42px;
 font-size:26px;
-color:#e6ebf5;
 }
 
 .card li::before{
 content:"✓ ";
-font-weight:bold;
 color:#8ec2ff;
+font-weight:bold;
 }
 
 .card .btn{
 margin-top:auto;
 text-align:center;
-text-decoration:none;
 font-size:24px;
 }
 
-/* BENEFICIOS */
 .grid4{
 display:grid;
 grid-template-columns:repeat(4,1fr);
@@ -282,7 +277,6 @@ text-align:center;
 font-size:24px;
 }
 
-/* ABOUT */
 .about{
 background:#061227;
 border-radius:28px;
@@ -295,7 +289,6 @@ line-height:1.7;
 color:#cfd8ea;
 }
 
-/* FOOTER */
 footer{
 padding:40px;
 text-align:center;
@@ -305,7 +298,7 @@ border-top:1px solid rgba(255,255,255,.05);
 margin-top:50px;
 }
 
-/* MOBILE */
+/* MOBILE AJUSTADO */
 @media (max-width:768px){
 
 header{
@@ -327,45 +320,43 @@ height:34px;
 display:flex;
 justify-content:center;
 align-items:center;
-gap:10px;
+gap:12px;
 flex-wrap:nowrap;
 width:100%;
 }
 
-.nav-links a,
-.nav-links .btn{
+.nav-links a{
 font-size:12px;
 font-weight:600;
-padding:0;
-margin:0;
-background:none;
-border:none;
-border-radius:0;
-white-space:nowrap;
-color:#fff;
 }
 
+/* AQUI FOI O AJUSTE DO ESPAÇO */
 .hero{
-padding:185px 22px 70px;
+padding:115px 22px 70px;
+background-position:center;
 }
 
 .hero-content{
 grid-template-columns:1fr;
-gap:30px;
-}
-
-.hero h1{
-font-size:52px;
-line-height:1.05;
-}
-
-.hero p{
-font-size:21px;
+gap:26px;
 }
 
 .badge{
 font-size:15px;
 padding:10px 18px;
+margin-bottom:18px;
+}
+
+.hero h1{
+font-size:52px;
+line-height:1.05;
+margin-bottom:22px;
+}
+
+.hero p{
+font-size:21px;
+line-height:1.45;
+margin-bottom:26px;
 }
 
 .hero-card h3{
@@ -487,7 +478,6 @@ padding:30px 18px;
 
 <div class="hero-card">
 <h3>Por que escolher a NuvemSul?</h3>
-
 <div class="hero-list">
 <div class="hero-item"><span>Backup automático</span><span>✓</span></div>
 <div class="hero-item"><span>Sincronização PC + Celular</span><span>✓</span></div>
@@ -495,7 +485,6 @@ padding:30px 18px;
 <div class="hero-item"><span>Atendimento humano</span><span>✓</span></div>
 <div class="hero-item"><span>Infraestrutura confiável</span><span>✓</span></div>
 </div>
-
 </div>
 
 </div>
@@ -503,7 +492,6 @@ padding:30px 18px;
 
 <section id="planos">
 <div class="container">
-
 <h2 class="title">Planos empresariais</h2>
 <p class="subtitle">Soluções escaláveis para o tamanho da sua operação.</p>
 
@@ -553,7 +541,6 @@ padding:30px 18px;
 </div>
 
 </div>
-
 </div>
 </section>
 
